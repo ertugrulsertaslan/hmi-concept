@@ -1,0 +1,49 @@
+@use "./topbar.scss";
+@use "./bottombar.scss";
+@use "./colors.scss";
+@use "./main.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.app-container {
+    flex: 0 0 1260px;
+    padding: 64px;
+}
+
+.app-box {
+    height: 0;
+    overflow: hidden;
+    padding-top: calc(780 / 1260 * 100%);
+    background: linear-gradient(colors.$c-dark 0%, colors.$c-primary 100%);
+    position: relative; 
+}
+
+.app-content {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    color: colors.$c-white;
+    display: flex;
+    flex-direction: column;
+}

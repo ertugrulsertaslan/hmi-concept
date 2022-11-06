@@ -1,0 +1,51 @@
+@use "./colors.scss";
+
+.topbar {
+    height: 48px;
+    padding: 8px 16px;
+    color: colors.$c-white;
+    font-family: "Prompt", sans-serif;
+    display: flex;
+}
+
+.topbar-clock {
+    
+}
+
+.topbar-music-control {
+    margin-left: auto;
+    margin-right: 32px;
+    opacity: 60%;
+    display: flex;
+
+    .topbar-music-control-icon {
+        color: #929292;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .topbar-music-control-icon:hover {
+        color: #ffffff;
+    }
+
+    div {
+        margin:auto 12px;
+    }
+
+    .song-name {
+        white-space: nowrap;
+        margin: auto 48px auto 0;
+    }
+}
+
+.topbar-status {
+    display: flex;
+
+    span {
+        margin:auto 12px;
+    }
+}
+
+

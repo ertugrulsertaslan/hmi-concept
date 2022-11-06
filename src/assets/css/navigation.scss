@@ -1,0 +1,140 @@
+.navigation-relative {
+    position: relative;
+}
+
+.navigation-overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    padding: 48px;
+}
+
+.navigation-directions {
+    height: 80%;
+    position: relative;
+}
+
+.navigation-directions-next-card {
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #110F14;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    position: relative;
+
+    .turn {
+        display: flex;
+        align-items: flex-end;
+
+        .turn-desc {
+            margin-left: auto;
+            line-height: 0.8;
+
+            .turn-desc-info {
+                display: flex;
+                align-items: flex-end;
+            }
+
+
+            .turn-desc-location {
+                margin-top: 16px;
+            }
+
+            .turn-desc-distance {
+                color: #ffffff;
+                font-size: 24px;
+            }
+
+            .turn-desc-unit {
+                color: #9c9ea1;
+                font-size: 16px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+    .progress {
+        display: flex;
+        margin-top: 20px;
+        span {
+            font-size: 12px;
+            color:#525259
+        }
+        .bar {
+            height: 2px;
+            background-color: #565669;
+            width: 100%;
+            position: relative;
+        }
+        .handle {
+            position: absolute;
+            left: 20px;
+            width: 8px;
+            height: 8px;
+            border-radius: 99px;
+            background-color: white;
+            top:-4px;
+        }
+    }
+
+    .sub-info {
+        display: flex;
+        margin-top: 16px;
+        justify-content: flex-end;
+        gap: 16px;
+
+        .sub-info-piece  {
+            p {
+                margin: 0;
+                color: #9c9ea1;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+.navigation-directions-default-card {
+    height: 150px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #49464e;
+    display: flex;
+    flex-direction: column;
+    padding: 64px 32px 32px 32px;
+    margin-top: -32px;
+    position: relative;
+    box-shadow: 0px 10px 10px #00000060;
+
+    .turn {
+        display: flex;
+        align-items: flex-end;
+
+        .turn-desc {
+            margin-left: auto;
+            line-height: 0.8;
+
+            .turn-desc-info {
+                display: flex;
+                align-items: flex-end;
+            }
+
+
+            .turn-desc-location {
+                margin-top: 16px;
+            }
+
+            .turn-desc-unit {
+                color: #9c9ea1;
+                font-size: 16px;
+                margin-left: auto;
+            }
+        }
+    }
+
+}
